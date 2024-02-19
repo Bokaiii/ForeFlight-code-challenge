@@ -1,0 +1,13 @@
+.search-history-row {
+    margin: 2px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+.search-history-row:hover {
+    cursor: pointer;
+}
+
+.search-history-row:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}

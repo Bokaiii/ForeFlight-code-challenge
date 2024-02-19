@@ -1,0 +1,41 @@
+
+<div style="display: flex; flex-direction: row; gap: 50px; width: 100%;">
+    <div class="home-icon">
+        <fa-icon [icon]="faCloud"></fa-icon>
+        <h6>ForeFlight code challenge</h6>
+    </div>
+    <nav class="w-100">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-current-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-current"
+            type="button"
+            role="tab"
+            aria-controls="nav-current"
+            aria-selected="true">
+        Current conditions</button>
+    
+          <button
+            class="nav-link"
+            id="nav-forecasts-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-forecasts"
+            type="button"
+            role="tab"
+            aria-controls="nav-forecasts"
+            aria-selected="false">
+            Forecasts</button>
+        </div>
+    </nav>
+</div>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-current" role="tabpanel" aria-labelledby="nav-current-tab">
+        <app-weather-current></app-weather-current>
+    </div>
+    <div class="tab-pane fade" id="nav-forecasts" role="tabpanel" aria-labelledby="nav-forecasts-tab">
+        <app-weather-forecasts></app-weather-forecasts>
+    </div>
+</div>

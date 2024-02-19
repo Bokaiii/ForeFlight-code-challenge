@@ -1,0 +1,28 @@
+<div>
+    <div class="weather-container" *ngIf="weatherReport">
+        <div class="weather-row title">
+            <div>VFR</div>
+            <!-- <div class="time" style="margin-left: auto; margin-right: 15px;">m ago</div> -->
+        </div>
+        <div class="weather-row" *ngIf="weatherReport?.icao">
+            <div class="weather-label">ICAO</div>
+            <div class="value">{{weatherReport.icao | uppercase}}</div>
+        </div>
+        <div class="weather-row" *ngIf="weatherReport?.windDirection || weatherReport?.windSpeed">
+            <div class="weather-label">Winds</div>
+            <div class="value">{{weatherReport.windDirection}}° at {{weatherReport.windSpeed}}kts</div>
+        </div>
+        <div class="weather-row" *ngIf="weatherReport?.visibility">
+            <div class="weather-label">Visibility</div>
+            <div class="value">{{weatherReport.visibility}} sm</div>
+        </div>
+        <div class="weather-row" *ngIf="weatherReport?.tempC">
+            <div class="weather-label">Temperature</div>
+            <div class="value">{{weatherReport.tempC}}°C ({{weatherReport.tempF}}°F)</div>
+        </div>
+        <div class="weather-row" *ngIf="weatherReport?.pressure">
+            <div class="weather-label">Pressure</div>
+            <div class="value">{{weatherReport.pressure}} in Hg</div>
+        </div>
+    </div>
+</div>

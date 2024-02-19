@@ -1,0 +1,18 @@
+.home-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;
+    gap: 10px;
+    min-width: fit-content;
+}
+
+.home-icon h6 {
+    margin-bottom: 0;
+}
+
+.nav-link {
+    color: black;
+}

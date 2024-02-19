@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "code-challenge-backend", "code-challenge-backend", "{5FC4CB3B-D7D6-40C4-B2C4-E5780E6E92AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestController", "code-challenge-backend\RestController\RestController.csproj", "{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0A7F2FD-E7B3-44BD-8D2F-174B084E417D} = {5FC4CB3B-D7D6-40C4-B2C4-E5780E6E92AA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6F9BFCC-512F-497A-A0CD-51D8D619FE4B}
+	EndGlobalSection
+EndGlobal

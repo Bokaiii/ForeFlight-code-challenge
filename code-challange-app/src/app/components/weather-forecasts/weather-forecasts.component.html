@@ -1,0 +1,26 @@
+<div style="margin: 50px;">
+    <div style="margin-bottom: 50px;">
+        <h1 class="accent-color" style="margin-bottom: 5px;">Weather forecasts</h1>
+        <hr style="width: 40%; margin-left: 0">
+    </div>
+
+    <div style="display: flex; flex-direction: column; margin-top: 20px; gap: 20px;">
+        <div class="search-container">
+            <input class="search-field"
+                type="text"
+                id="icao-field-forecasts"
+                placeholder="Enter ICAO code..."
+                (keyup.enter)="search(icaoCode.value)">
+        </div>
+
+        <app-search-history (cachedIcao)="search($event)"></app-search-history>
+
+        <div *ngIf="isLoading" class="weather-container" style="width: 30%; height: 200px; padding: 20px">
+            <ngx-skeleton-loader count="5"></ngx-skeleton-loader>
+        </div>
+    
+        <div *ngFor="let forecast of forecasts">
+            <app-weather-information [weatherReport]="forecast"></app-weather-information>
+        </div>
+    </div>
+</div>
